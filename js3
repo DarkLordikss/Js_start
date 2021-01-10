@@ -1,0 +1,18 @@
+function sFact(n)
+{
+return n ? n * sFact(n - 1) : 1;
+}
+
+function count(nf, kf, s)
+{
+let c = nf/(s*kf);
+return c;
+}
+
+var n = 12, k = 3, nf, kf, s;
+nf = sFact(n);
+kf = sFact(k);
+s = sFact(n-k);
+count(nf, kf, s);
+console.log(count(nf, kf, s));
+//А вот тут было чуть проще, чем во втором, но все же непросто тоже
